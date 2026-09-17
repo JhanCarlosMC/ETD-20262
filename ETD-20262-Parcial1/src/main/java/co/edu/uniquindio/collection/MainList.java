@@ -3,10 +3,12 @@ package co.edu.uniquindio.collection;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class MainList {
     static void main() {
-        testArrayslist();
+        //testArrayslist();
+        testLinkedList();
     }
 
     public static void testArrayslist(){
@@ -36,5 +38,26 @@ public class MainList {
         IO.println(notas.indexOf(notaELiminar));
         IO.println(notas.isEmpty());
 
+    }
+
+    public static void testLinkedList(){
+        ArrayList<String> lista = new ArrayList<>();
+        lista.add("Java");
+        lista.add("JS");
+        lista.add("C#");
+        lista.add("Cobol");
+
+        //ListIterator - Se aplica a cualquier lista
+        ListIterator<String> listIterator = lista.listIterator();
+
+        IO.println("Iniciando recorrido con iterador:");
+        while (listIterator.hasNext()){
+            IO.println(listIterator.next());
+        }
+
+        IO.println("Iniciando recorrido contrario con iterador:");
+        while (listIterator.hasPrevious()){
+            IO.println(listIterator.previous());
+        }
     }
 }

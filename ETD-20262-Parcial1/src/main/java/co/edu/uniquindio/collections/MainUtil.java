@@ -7,8 +7,8 @@ import java.util.LinkedList;
 
 public class MainUtil {
     static void main() {
-//        testArrays();
-        testCollections();
+        testArrays();
+        //testCollections();
     }
 
     private static void testCollections() {
