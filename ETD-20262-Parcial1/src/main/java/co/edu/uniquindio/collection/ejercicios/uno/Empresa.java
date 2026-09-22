@@ -8,6 +8,9 @@ public class Empresa {
     public Empresa (){
         inventario = new TreeSet<>();
     }
+    public int cantidad(){
+       return inventario.size();
+    }
 
     public boolean agregarProducto(Producto nuevoProducto){
        return inventario.add(nuevoProducto);

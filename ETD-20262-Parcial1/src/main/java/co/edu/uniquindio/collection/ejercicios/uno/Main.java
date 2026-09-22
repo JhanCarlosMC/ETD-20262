@@ -8,9 +8,11 @@ public class Main {
         Empresa miEmpresa = new Empresa();
 
         miEmpresa.agregarProducto(new Producto("01", "PC", 10000.0));
+        miEmpresa.agregarProducto(new Producto("01", "PC", 10000.0));
         miEmpresa.agregarProducto(new Producto("02", "TV", 25000.0));
         miEmpresa.agregarProducto(new Producto("03", "Moto", 500000.0));
 
+        IO.println(miEmpresa.cantidad());
         Producto productoEncontrado = miEmpresa.buscarProducto("02");
         IO.println(productoEncontrado);
     }
