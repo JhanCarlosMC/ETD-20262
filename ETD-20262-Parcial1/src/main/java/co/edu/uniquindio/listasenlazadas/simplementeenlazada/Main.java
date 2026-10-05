@@ -14,7 +14,7 @@ public class Main {
 
         IO.println(miLista.buscar("Ceballos"));
         IO.println(miLista.localizar("Carlos"));
-        IO.println(miLista.localizar(12));
+        IO.println(miLista.localizar("12"));
 
         miLista.eliminarInicio();
         IO.println(miLista.mostrar());
