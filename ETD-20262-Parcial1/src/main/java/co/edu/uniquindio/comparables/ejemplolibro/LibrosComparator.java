@@ -1,4 +1,4 @@
-package co.edu.uniquindio.comparables;
+package co.edu.uniquindio.comparables.ejemplolibro;
 
 import java.util.Comparator;
 

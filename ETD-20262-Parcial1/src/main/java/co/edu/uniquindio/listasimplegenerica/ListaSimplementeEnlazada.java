@@ -1,6 +1,8 @@
 package co.edu.uniquindio.listasimplegenerica;
 
-public class ListaSimplementeEnlazada<T> {
+import java.util.Iterator;
+
+public class ListaSimplementeEnlazada<T> implements Iterable<T> {
 
     private Nodo<T> inicio;
     private int tam;
@@ -138,5 +140,10 @@ public class ListaSimplementeEnlazada<T> {
 
     public void setTam(int tam) {
         this.tam = tam;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new ListaIterator(inicio);
     }
 }
